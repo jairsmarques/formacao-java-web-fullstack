@@ -34,6 +34,8 @@ public class PrimeiraClasseJava {
 		System.out.println("Idade é = " + aluno1.getIdade());
 		System.out.println("Nascimento = " + aluno1.getDataNascimento());
 		System.out.println("Media da nota é = " + aluno1.getMediaNota());
+		System.out.println("Resultado = " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
+		System.out.println("Resultado2 = " + aluno1.getAlunoAprovado2());
 		System.out.println("-------------------------------------------");
 		/*======================================================================*/
 		
