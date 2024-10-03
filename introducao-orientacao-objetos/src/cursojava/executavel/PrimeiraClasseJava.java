@@ -7,7 +7,7 @@ import cursojava.classes.Aluno;
 public class PrimeiraClasseJava {
 
 	public static void main(String[] args) {
-		
+		/*
 		String nome = JOptionPane.showInputDialog("Qual o seu nome:");
 		String idade = JOptionPane.showInputDialog("Qual a idade:");
 		String dataNascimento = JOptionPane.showInputDialog("Data de nascimento?:");
@@ -41,8 +41,26 @@ public class PrimeiraClasseJava {
 		aluno1.setNota4(Double.parseDouble(nota4));
 	
 		System.out.println(aluno1.toString());/*Descrição do objeto na memória*/
+		/*
 		System.out.println("Média do aluno = " + aluno1.getMediaNota());
 		System.out.println("Resultado" + aluno1.getAlunoAprovado2());
+		*/
+		
+		/*Equals e Hashcode (Diferenciar e comparar objetos*/
+		Aluno aluno1 = new Aluno();
+		aluno1.setNome("Alex");
+		aluno1.setNumeroCpf("123");
+		
+		Aluno aluno2 = new Aluno();
+		aluno2.setNome("Alex");
+		aluno2.setNumeroCpf("1234");
+		
+		if (aluno1.equals(aluno2)) {
+			System.out.println("Alunos são iguais");
+		} else {
+			System.out.println("Alunos não são iguais");
+		}
+		
 	}
 
 }
