@@ -13,13 +13,38 @@ public class PrimeiraClasseJava {
 		aluno1 = new Aluno(); // Aqui será o João
 		// new Aluno() -> instância (criação de Objeto)
 		// aluno1 -> referência para o objeto Aluno
-		aluno1.nome = "João";
-		aluno1.idade = 50;
-		System.out.println("Nome do aluno 1 é = " + aluno1.nome);
-		System.out.println("Idade é = " + aluno1.idade);
 		
+		
+		aluno1.setNome("João da Silva");
+		aluno1.setIdade(50);
+	    aluno1.setDataNascimento("18/10/87");
+	    aluno1.setRegistroGeral("44554.45444.545");
+	    aluno1.setNumeroCpf("54544.545454.5454");
+	    aluno1.setNomeMae("Shirley");
+	    aluno1.setNomePai("Antonio");
+	    aluno1.setDataMatricula("10/01/20219");
+	    aluno1.setSerieMatriculado("5");
+	    aluno1.setNomeEscola("Escola JDEV Treinamento");
+	
+		System.out.println("Nome do aluno 1 é = " + aluno1.getNome());
+		System.out.println("Idade é = " + aluno1.getIdade());
+		System.out.println("nascimento = " + aluno1.getDataNascimento());
+		
+		/* ======================================================== */
+		
+		System.out.println("------------------------------------------");
 		/* Agora temos um objeto na memória (new cria um objeto na memória) */
 		Aluno aluno2 = new Aluno(); // Aqui será o Pedro
+		
+		aluno2.setNome("Pedro");
+		aluno2.setIdade(40);
+		aluno2.setDataNascimento("10/10/1970");
+		
+		System.out.println("Nome do aluno 2 é = " + aluno2.getNome());
+		System.out.println("Idade do aluno 2 é = " + aluno2.getIdade());
+		System.out.println("nascimento do aluno 2 = " + aluno2.getDataNascimento());
+		
+		/* ======================================================== */
 		
 		Aluno aluno3 = new Aluno(); // Aqui será o Alex
 		
