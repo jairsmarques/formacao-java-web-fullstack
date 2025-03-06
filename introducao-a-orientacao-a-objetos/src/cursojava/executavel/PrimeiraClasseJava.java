@@ -11,6 +11,12 @@ public class PrimeiraClasseJava {
 		
 		/* criando um objeto na memória*/
 		aluno1 = new Aluno(); // Aqui será o João
+		// new Aluno() -> instância (criação de Objeto)
+		// aluno1 -> referência para o objeto Aluno
+		aluno1.nome = "João";
+		aluno1.idade = 50;
+		System.out.println("Nome do aluno 1 é = " + aluno1.nome);
+		System.out.println("Idade é = " + aluno1.idade);
 		
 		/* Agora temos um objeto na memória (new cria um objeto na memória) */
 		Aluno aluno2 = new Aluno(); // Aqui será o Pedro
