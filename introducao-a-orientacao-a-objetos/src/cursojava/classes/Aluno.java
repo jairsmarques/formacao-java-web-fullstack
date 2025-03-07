@@ -14,27 +14,26 @@ public class Aluno {
 	private String dataMatricula;
 	private String nomeEscola;
 	private String serieMatriculado;
-	
+
 	private Double nota1;
 	private Double nota2;
 	private Double nota3;
 	private Double nota4;
-	
+
 	/* Esses são os cosntrutores do Aluno */
 	public Aluno() {/* Cria os dados na mémoria - Sendo padrão do Java */
-		
+
 	}
 
 	public Aluno(String nomePadrao) {
 		nome = nomePadrao;
 	}
-	
+
 	public Aluno(String nomePadrao, int idadePadrao) {
 		nome = nomePadrao;
 		idade = idadePadrao;
 	}
-	
-	
+
 	/* Veremos os métodos SETTERS e GETTERS do objeto */
 	/* SET é para adicionar ou receber dados para os atributos */
 	/* GET é para resgatar ou obter o valor do atributo */
@@ -150,12 +149,13 @@ public class Aluno {
 	public void setNota4(Double nota4) {
 		this.nota4 = nota4;
 	}
-	
+
 	/* Método que retorna a média do aluno */
 	public double getMediaNota() {
 		return (nota1 + nota2 + nota3 + nota4) / 4;
 	}
-	
+
+	/* Método que retorna true para Aprovado e false para Reprovado */
 	public boolean getAlunoAprovado() {
 		double media = this.getMediaNota();
 		if (media >= 70) {
@@ -164,7 +164,7 @@ public class Aluno {
 			return false;
 		}
 	}
-	
+
 	public String getAlunoAprovado2() {
 		double media = this.getMediaNota();
 		if (media >= 70) {
@@ -173,6 +173,5 @@ public class Aluno {
 			return "Aluno está reprovado";
 		}
 	}
-	
-	
+
 }
