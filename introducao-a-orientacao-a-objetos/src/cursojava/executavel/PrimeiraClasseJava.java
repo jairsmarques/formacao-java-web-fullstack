@@ -43,20 +43,10 @@ public class PrimeiraClasseJava {
 		aluno1.setNota3(Double.valueOf(nota3));
 		aluno1.setNota4(Double.valueOf(nota4));
 
-		System.out.println("Nome do aluno 1 é = " + aluno1.getNome());
-		System.out.println("Idade é = " + aluno1.getIdade());
-		System.out.println("Nascimento = " + aluno1.getDataNascimento());
-		System.out.println("Registro geral: " + aluno1.getRegistroGeral());
-		System.out.println("CPF: " + aluno1.getNumeroCpf());
-		System.out.println("Nome da mãe: " + aluno1.getNomeMae());
-		System.out.println("Nome da pai: " + aluno1.getNomePai());
-		System.out.println("Data de matrícula: " + aluno1.getDataMatricula());
-		System.out.println("Série: " + aluno1.getSerieMatriculado());
-		System.out.println("Nome da Escola: " + aluno1.getNomeEscola());
-		System.out.printf("Média das notas = %.2f%n", aluno1.getMediaNota());
-		System.out.println("Resultado = " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
-		System.out.println("Resultado 2 = " + aluno1.getAlunoAprovado2());
-
+		System.out.println(aluno1.toString()); 
+		System.out.println("Média do aluno = " + aluno1.getMediaNota());
+		System.out.println("Resultado = " + aluno1.getAlunoAprovado2());
+		
 	}
 
 }
